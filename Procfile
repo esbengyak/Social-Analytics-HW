@@ -1,1 +1,1 @@
-worker: PlotBot Final-checkpoint
+worker: PlotBot2.py
