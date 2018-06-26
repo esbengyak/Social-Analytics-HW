@@ -1,1 +1,1 @@
-worker: PlotBot Final-checkpoint.py >Procfile
+worker: PlotBot Final-checkpoint
