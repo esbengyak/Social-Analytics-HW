@@ -1,6 +1,3 @@
-
-
-```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,10 +13,8 @@ consumer_key = "Ed4RNulN1lp7AbOooHa9STCoU"
 consumer_secret = "P7cUJlmJZq0VaCY0Jg7COliwQqzK0qYEyUF9Y0idx4ujb3ZlW5"
 access_token = "839621358724198402-dzdOsx2WWHrSuBwyNUiqSEnTivHozAZ"
 access_token_secret = "dCZ80uNRbFDjxdU2EckmNiSckdoATach6Q8zb7YYYE5ER"
-```
 
 
-```python
 def TweetAnalyzer():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
@@ -164,28 +159,3 @@ def TweetAnalyzer():
 while(True):
     AnalyzeTweets()
     time.sleep(300)
-
-```
-
-
-    ---------------------------------------------------------------------------
-
-    IndexError                                Traceback (most recent call last)
-
-    <ipython-input-44-768fd133d65f> in <module>()
-        141 
-        142 while(True):
-    --> 143     AnalyzeTweets()
-        144     time.sleep(300)
-    
-
-    <ipython-input-40-c1030482cb66> in AnalyzeTweets()
-         18 
-         19     # Grab the most recent command tweet
-    ---> 20     command = mentions["statuses"][0]["text"]
-         21     requesting_user = mentions["statuses"][0]["user"]["screen_name"]
-         22 
-    
-
-    IndexError: list index out of range
-
