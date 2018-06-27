@@ -1,1 +1,1 @@
-worker: PlotBot2.py
+worker: python PlotBot2.py
